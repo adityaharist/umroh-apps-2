@@ -130,7 +130,7 @@ function clickContinue(state) {
                         '<div class="end">Anda telah selesai!</div> <p class ="endScore">Skor anda ' + 
                           state.userScore + " dari " + state.currentQuestion + "<p>");
 //     $('#tab-1').append('<a class="balik button button-raised" onclick="clickStart();">Lagi?!</a>' + "</section> </div>");
-    $('#tab-1').append('<button class="button button-raised js-start hover" onclick="clickRestart();">Tes ulang</button>' + "</section> </div>");
+//     $('#tab-1').append('<button class="button button-raised js-start hover" onclick="clickRestart();">Tes ulang</button>' + "</section> </div>");
     $('.js-count').remove(); //hapus class js-count
     $('.js-score').remove(); //hapus class js-score
 
