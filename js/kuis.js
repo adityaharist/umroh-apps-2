@@ -167,3 +167,8 @@ $(function() {
   });
 
 });
+
+$$.getJSON(‘http://sitedatasource.com/data 99’, function(data) {
+// specific code related to the data download
+$$("#cover’).hide();
+}
