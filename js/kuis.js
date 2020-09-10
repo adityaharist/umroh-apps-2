@@ -125,7 +125,7 @@ function clickContinue(state) {
 
   //kuis berakhir dan menampilkan pesan serta membuang jumlah pertanyaan serta nilai dari halaman bawah
   if (state.currentQuestion > 9) {
-    $('.js-startPage').addClass();
+//     $('.js-startPage').addClass();
     $('#tab-1').append("<div class='row' id='question-container'> <section class = 'question-container col-8'>" + 
                         '<div class="end">Anda telah selesai!</div> <p class ="endScore">Skor anda ' + 
                           state.userScore + " dari " + state.currentQuestion + "<p>");
