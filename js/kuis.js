@@ -120,7 +120,7 @@ function clickContinue(state) {
   // hide tombol continue dan result, dengan memberikan class hidden
   $('.js-continue').addClass('hidden');
   $('.result').addClass('hidden');
-//   $('section').remove();
+  $('section').remove();
   $("section").hide("fast");
 
   //kuis berakhir dan menampilkan pesan serta membuang jumlah pertanyaan serta nilai dari halaman bawah
