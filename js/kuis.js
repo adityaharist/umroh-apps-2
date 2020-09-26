@@ -3,58 +3,54 @@
 //daftar pertanyaan, jawaban tersedia nomor 0-3 (index)
 var state = {
   questions: [{
-      question: 'Tujuan dilaksanakan ibadah haji?',
-      answers: ['Mengunjungi Baitullah di Mekah kerana mengerjakan ibadat tertentu pada masa tertentu dengan syarat tertentu', 'Mengunjungi Kaabah di Mekah kerana melakukan tawaf kerana Allah', 'Mengunjungi Baitullah di Mekah kerana melakukan ibadat tertentu pada waktu tertentu.', 'Mengunjungi Baitullah di Mekah kerana ingin melakukan tawaf, saie dan bercukur'],
-      answerCorrect: 0
-    },
-    {
-      question: 'Apakah hukum menunaikan haji?',
-      answers: ['Harus', 'Fardhu kifayah', 'Wajib bagi yang mampu', 'Sunat'],
-      answerCorrect: 2
-    },
-    {
-      question: 'Diantara berikut ini, manakah bukan merupakan rukun haji?',
-      answers: ['Sai', 'Tertib', 'Wukuf', 'Melontar Jamratul Aqabah'],
+      question: 'Apakah Hukum asli dari Ibadah Umroh?',
+      answers: ['Wajib', 'Sunnah', 'Mubah', 'Makruh'],
       answerCorrect: 1
     },
     {
-      question: 'Tanggal waktu dilaksanakannya wukuf bagi umat Islam ialah',
-      answers: ['10 Zulhijjah', '10 Zulhijjah', '9 Zulhijjah', '10 Zulkaedah'],
+      question: 'Mana yang bukan rukun Umroh?',
+      answers: ['Ihram', 'Tawaf', 'Wudhu', 'Sai'],
       answerCorrect: 2
     },
     {
-      question: 'Berikut, manakah yang bukan merupakan syarat-syarat dalam melakukan ibadah haji :',
-      answers: ['Ada kesempatan waktu', 'Mempunyai ilmu yang luas tentang haji', 'Ada kendaraan untuk pulang dan pergi', 'Mempunyai nafkah yang cukup untuk tanggungan yang ditinggalkan'],
+      question: 'Mana yang bukan larangan Ihram?',
+      answers: ['Kentut', 'Berburu', 'Cukur', 'Memakai Cadar'],
       answerCorrect: 0
     },
     {
-      question: 'Berikut ini, manakah yang merupakan larangan saat mengerjakan haji?',
-      answers: ['Menanam tanaman di Mekah', 'Menutup kepala bagi laki-laki', 'Memakai obat-obatan terlarang', 'Menutup tapak tangan bagi perempuan'],
-      answerCorrect: 2
-    },
-    {
-      question: 'Apakah yang dimaksud dengan tawaf ifadhah?',
-      answers: ['Tawaf selamat datang', 'Tawaf selamat tinggal', 'Tawaf sunat yang boleh dilakukan sewaktu-waktu', 'Rukun Tawaf yang wajib dikerjakan oleh semua jemaah haji'],
-      answerCorrect: 2
-    },
-    {
-      question: 'Berikut adalah perkara sunat yang dilakukan sebelum niat ihram haji kecuali :',
-      answers: ['Pakai pakaian ihram berwarna putih',
-        'Memohon maaf atas kesalahan yang pernah dilakukan terhadap orang lain',
-        'Memotong kuku',
-        'Memakai minyak rambut dan bau-bauan'
-      ],
-      answerCorrect: 2
-    },
-    {
-      question: 'Jemaah yang melakukan haji secara tamattuk atau qiran dikenakan dam berupa?',
-      answers: ['Tertib dan taqdir', 'Tertib dan takdil', 'Takhyir dan taqdir', 'Takhyir dan takdil'],
-      answerCorrect: 2
-    },
-    {
-      question: 'Berikut adalah rukun umrah kecuali',
-      answers: ['Wukuf', 'Tawaf', 'Sai', 'Tertib'],
+      question: 'Manakah keutamaan Umroh dibawah ini yang benar?',
+      answers: ['Mendapat Uang', 'Dipanggil Ustadz', 'Menjadi orang Dermawan', 'Menjadi Tamu Allah'],
       answerCorrect: 3
+    },
+    {
+      question: 'Berikut ini tempat-tempat yang berada di Masjidil Haram, kecuali?',
+      answers: ['Ka"bah', 'Raudhah', 'Hijir Islmail', 'Maqam Ibrahim'],
+      answerCorrect: 1
+    },
+    {
+      question: 'Dibawah ini yang bukan praktik ketika berada di Hajar Aswad adalah?',
+      answers: ['Isyarah', 'Mengusap', 'Mencium', 'Menepuk'],
+      answerCorrect: 3
+    },
+    {
+      question: 'Berapakah hitungan putaran Tawaf?',
+      answers: ['6 kali', '7 kali', '5 kali', '8 kali'],
+      answerCorrect: 1
+    },
+    {
+      question: 'Ketika selesai melaksanakan Sai, maka jamaah melakukan?',
+      answers: ['Tahalul', 'Tawaf', 'Sholat', 'Berdoa'],
+      answerCorrect: 0
+    },
+    {
+      question: 'Tempat terakhir pelaksanaan Sai adalah?',
+      answers: ['Shafa', 'Hijir Ismail', 'Marwa', 'Hajar Aswad'],
+      answerCorrect: 2
+    },
+    {
+      question: 'Dibawah ini yang bukan area Masjid Nabawi adalah?',
+      answers: ['Hajar Aswad', 'Raudhah', 'Makam Rosul', 'Kubah Hijau'],
+      answerCorrect: 0
     }
   ],
 
@@ -81,9 +77,9 @@ function clickAnswer(chosenElement, state) {
   //jika memilik jawaban yang BENAR, maka akan mengatakan pada pengguna "CORRECT" daripada "WRONG"
   if (chosenAnswer == state.questions[state.currentQuestion].answerCorrect) {
     state.userScore += 1;
-    $('.response1').text('Mantul!');
+    $('.response1').text('Benar');
   } else {
-    $('.response1').text('Salah :(');
+    $('.response1').text('Salah');
 
     //add class "wrong answer" so that the button that was clicked can be
     //marked with a red colour
