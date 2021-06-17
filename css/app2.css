@@ -28,7 +28,7 @@ html {
   background-color: white;
   color: white;
 
-  background: white url(../img/bg.jpg) 50% 50% no-repeat;
+/*   background: white url(../img/bg.jpg) 50% 50% no-repeat; */
   background-size: cover;
   height: 100%;
 }
