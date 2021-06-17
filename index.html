@@ -199,6 +199,14 @@
           $('#splash').fadeOut(500);
        }, 3000);
     });
+$('.swiper-zoom-container').on('tab:hide', () => {
+  // disable Swiper's autoplay in this tab
+	console.log("aku hilang!!");
+});
+$('.swiper-zoom-container').on('tab:show', () => {
+  // enable autoplay on tab show
+	console.log("aku muncul!!");
+});
   </script>
 </body>
 </html>
