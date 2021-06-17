@@ -118,15 +118,15 @@
 		  <div id="tab-2" class="page-content tab tab-active">
 		  	<div class="tablet-50 slide_gambar" style="height: 50%;">
 			  <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper">
-			  	<div class="swiper-pagination"></div>
+			      <div class="swiper-pagination"></div>
 			      <div class="swiper-wrapper">
-              <div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah3.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah3.jpg"/></div></div>
 			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjidil-haram.jpg"/></div></div>
 			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjid-nabawi.jpg"/></div></div>
-              <div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/minum.jpg"/></div></div>
-              <div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/jamaah.jpg"/></div></div>
-              <div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah1.jpg"/></div></div>
-              <div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/siwak.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/minum.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/jamaah.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah1.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/siwak.jpg"/></div></div>
 			      </div>
 			  </div>
 		  	</div>
@@ -194,15 +194,18 @@
 	$(document).ready(function() {
 		console.log("aplikasi panduan umuro");
 		    var swiper = new Swiper('.swiper-container', {
+			loop:true,
+			grabCursor:true,
+			simulateTouch: false,
+			transitionSpeed: 1000,
 			pagination: '.swiper-pagination',
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev',
 			slidesPerView: 1,
 			centeredSlides: false,
 			paginationClickable: true,
 			autoplay: 2500,
 			spaceBetween: 1,
-		    });
+			
+		});
 	});
 	  
 	    $(function(){
