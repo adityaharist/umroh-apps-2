@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/grid.css">
   <link rel="apple-touch-icon" href="img/icon.jpeg">
   <link rel="icon" href="img/icon.jpeg">
-	<style type="text/css">
+  <style type="text/css">
      #splash {
       background-color: #ebedec;
       object-fit: cover;
@@ -28,6 +28,40 @@
       z-index: 20000;
     }
   </style>
+  <style>
+      #text {
+        margin-top: 100px;
+        text-align: center;
+      }
+      #compass {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin: 20px auto 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 100px;
+      }
+      .north, .south {
+        position: absolute;
+        left: 94px;
+        width: 12px;
+        height: 100px;
+      }
+      .north {
+        top: 0;
+        background: red;
+        text-align: center;
+        font-size: 11px;
+      }
+      .south {
+        top: 100px;
+        background: black;
+      }
+      #meta {
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
 </head>
 <body>
   <div id="splash"><center><img src="img/splashscreen.jpeg" /></center></div>
