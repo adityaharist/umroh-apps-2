@@ -195,19 +195,20 @@
   <script type="text/javascript">  
 	$(document).ready(function() {
 		console.log("aplikasi panduan umuro");	
-		swiper.autoplay.stop()
+		swiper.autoplay.stop();
 	});
 	  
 	    $(function(){
 	       setTimeout(function() {
 		  $('#splash').fadeOut(500);
 		  console.log("asiappppp!!");
-		  swiper.autoplay.start()
 	       }, 3000);
+		    
+		swiper.autoplay.start();
 	    });
 	  
 	  $(function(){
-	    swiper.autoplay.start()
+	    swiper.autoplay.start();
 	    var swiper = new Swiper('.swiper-container', {
 	        loop:true,
 		grabCursor:true,
