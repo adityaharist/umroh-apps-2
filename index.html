@@ -193,21 +193,25 @@
   <script type="text/javascript">  
 	$(document).ready(function() {
 		console.log("aplikasi panduan umuro");
+		    var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			slidesPerView: 3,
+			centeredSlides: false,
+			paginationClickable: true,
+			autoplay: 2500,
+			spaceBetween: 15,
+		    });
+		    $('#tab-2').tabs();
 	});
-    $(function(){
-       setTimeout(function() {
-          $('#splash').fadeOut(500);
-	  console.log("asiappppp!!");
-       }, 3000);
-    });
-$('.swiper-zoom-container').on('tab:hide', () => {
-  // disable Swiper's autoplay in this tab
-	console.log("aku hilang!!");
-});
-$('.swiper-zoom-container').on('tab:show', () => {
-  // enable autoplay on tab show
-	console.log("aku muncul!!");
-});
+	  
+	    $(function(){
+	       setTimeout(function() {
+		  $('#splash').fadeOut(500);
+		  console.log("asiappppp!!");
+	       }, 3000);
+	    });
   </script>
 </body>
 </html>
