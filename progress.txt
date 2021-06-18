@@ -1,4 +1,5 @@
 Todolist and what I did  
+- Berhasil slider swiper secara otomatis dengan library swipper.jquery.min.js
 - Membuat tampilan menu beserta icon yang responsif  
 - Membuat slide swiper tetap berada di atas  
 

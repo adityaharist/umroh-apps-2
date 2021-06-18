@@ -60,7 +60,7 @@ var routes = [
   {
     path: '/arahkiblat/',
     url: './pages/kiblat.html',
-    name: 'ArahKiblat',
+    name: 'arahkiblat',
   },
   // Right Panel pages
   {
