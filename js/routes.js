@@ -63,7 +63,7 @@ var routes = [
     name: 'arahkiblat',
   },
   {
-    path: '/profl/',
+    path: '/profil/',
     url: './pages/profil.html',
     name: 'profil',
   },
