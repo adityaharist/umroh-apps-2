@@ -3,7 +3,7 @@ Todolist and what I did
 - Membuat tampilan menu beserta icon yang responsif  
 - Membuat slide swiper tetap berada di atas  
 
-Beberapa bug:  
+Beberapa bug:  update 18/06/21
 - Kuis perlu direstart + tombol reset  
 - Di halaman ziarah pada tab-1 dan ke-2, kurang responsif ketika move tab.  
-- 
+- Penambahan javascript ke dalam setiap page mengalami bug, masih riset
