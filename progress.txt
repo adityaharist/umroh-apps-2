@@ -1,0 +1,8 @@
+Todolist and what I did  
+- Membuat tampilan menu beserta icon yang responsif  
+- Membuat slide swiper tetap berada di atas  
+
+Beberapa bug:  
+- Kuis perlu direstart + tombol reset  
+- Di halaman ziarah pada tab-1 dan ke-2, kurang responsif ketika move tab.  
+- 
