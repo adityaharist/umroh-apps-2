@@ -56,6 +56,7 @@ var routes = [
     url: './pages/feedback.html',
     name: 'feedback',
   },
+  // update on 18/06/21
   {
     path: '/arahkiblat/',
     url: './pages/kiblat.html',
