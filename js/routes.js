@@ -56,6 +56,11 @@ var routes = [
     url: './pages/feedback.html',
     name: 'feedback',
   },
+  {
+    path: '/arahkiblat/',
+    url: './pages/kiblat.html',
+    name: 'ArahKiblat',
+  },
   // Right Panel pages
   {
     path: '/panel-right-1/',
