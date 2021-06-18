@@ -62,6 +62,11 @@ var routes = [
     url: './pages/kiblat.html',
     name: 'arahkiblat',
   },
+  {
+    path: '/profl/',
+    url: './pages/profil.html',
+    name: 'profil',
+  },
   // Right Panel pages
   {
     path: '/panel-right-1/',

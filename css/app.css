@@ -676,6 +676,20 @@ i.icon.icon-myicon7 {
    background-image: url("../img/checklist.png");
 }
 
+/*profil*/
+i.icon.icon-myicon8 {
+   width: 32px;
+   height: 32px;
+   background-image: url("../img/profil.png");
+}
+
+/*compass*/
+i.icon.icon-myicon9 {
+   width: 32px;
+   height: 32px;
+   background-image: url("../img/compass.png");
+}
+
 /*div[class*="col"] {
   background: #fff;
   text-align: center;
