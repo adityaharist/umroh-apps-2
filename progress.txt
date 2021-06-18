@@ -7,3 +7,4 @@ Beberapa bug:  update 18/06/21
 - Kuis perlu direstart + tombol reset  
 - Di halaman ziarah pada tab-1 dan ke-2, kurang responsif ketika move tab.  
 - Penambahan javascript ke dalam setiap page mengalami bug, masih riset
+- Kendala pada Kuis, harusnya ditaruh pada page khusus namun terpaksa dimasukkan kedalam tab menu Quiz. Sementara mengakalinya dengan cara tsb
