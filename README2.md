@@ -49,3 +49,32 @@ Hapus semua file yang ada di folder umrah
 kemudian pindahkan proyek aplikasi yang telah dibangun sebelumnya
 ke folder proyek aplikasi cordova yang telah dibuat
 tinggal di drag and drop lalu selesai
+    
+    
+-------------------------------------------------------    
+
+Pemandu Haji    
+Ada lebih dari 1,5 miliar Muslim di seluruh dunia. Ibadah Haji merupakan kebutuhan wajib bagi mereka – itulah target pasar kami! Setiap tahun, ada lebih dari 6-8 juta Muslim menunaikan ibadah Haji dengan bepergian ke Mekah untuk melakukan Umrah selain Haji. Akan tetapi:    
+1) Ribuan orang tersesat    
+2) Ribuan orang terluka    
+3) Ratusan orang Meninggal dunia    
+Kami adalah Aplikasi Pemandu Haji dan kami akan membuat Haji & Umrah Lebih Aman & Sederhana. Kami telah mengembangkan teknologi perangkat keras dan perangkat lunak yang dapat dipakai yang akan memungkinkan para peziarah untuk:    
+1) Berkomunikasi satu sama lain melalui Audio 2 arah    
+2) Melacak teman dan keluarga    
+3) Menavigasi secara offline    
+Inilah kelebihannya – Semuanya bekerja secara offline, tanpa internet atau koneksi seluler, dalam jangkauan 4-5 KM dan dengan masa pakai baterai sekitar 5 hari.    
+Kami ingin orang-orang memakai band kami dan melupakan semua hal yang merepotkan, sehingga mereka dapat fokus pada perjalanan spiritual mereka.    
+Kami sudah memiliki prototipe yang berfungsi.    
+Kami telah menunjukkannya kepada banyak konsultan perjalanan haji dan kementerian terkait – Mereka sangat bersemangat akan hal ini.    
+    
+    
+=====English Version=====    
+There are more than 1.5 billion Muslims around the globe. Hajj is necessary for each and every one of them – that is our target market! Ever year 6-8 million Muslims find their way to Mecca to perform Hajj & Umrah. However:    
+1) Thousands of people get lost    
+2) Thousands get injured    
+3) Hundreds Die    
+We are Hajj Guider and we are going to make Hajj & Umrah Safer & Simpler. We have developed wearable hardware and software tech that will allow the pilgrims to:    
+1) Communicate each other via 2 way Audio    
+2) Track friends and family    
+3) Navigate offline    
+Here’s the magic – Everything works offline, without internet or cellular connection, over a 4-5 KM range and with a battery life of around 5 days. We want people to wear our band and forget about all the hassles, so that they can focus on their spiritual journey. We already have a working prototype. We have shown it to numerous Hajj travel consultants and relevant ministries – They are really excited about it.    

@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="css/app2.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/kiblat.css">
+  <link rel="stylesheet" href="css/box-shadows.min.css">
+  <link rel="stylesheet" href="css/box-shadows.css">
   <link rel="apple-touch-icon" href="img/icon64.png">
   <link rel="icon" href="img/icon64.png">
   <style type="text/css">
@@ -28,10 +29,28 @@
       left: 0;
       z-index: 20000;
     }
+
+    .grid-container{
+      margin-top: 16px;
+    }
+    
+    div[class*="col"] {
+      background: #fff;
+      text-align: center;
+      color: #000;
+      /*border: 1px solid #ddd;*/
+      padding: 16px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }    
+
+    /*@media only screen and (max-width: 360px){
+
+    }*/
   </style>
 </head>
 <body>
-  <div id="splash"><center><img src="img/splashscreen.jpeg" /></center></div>
+  <!-- <div id="splash"><center><img src="img/splashscreen.jpeg" /></center></div> -->
   <!-- <div id="splash"><center><img src="img/splashmame2.gif" /></center></div> -->
   <div id="app">
     <div class="statusbar"></div>
@@ -133,40 +152,78 @@
 			      </div>
 			  </div>
 		  	</div>
-		  	<div class="row">
-	          <div class="col-50 tablet-25" style="text-align:center; margin-top: 30px">
+		  	<!-- <div class="row">
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
 	            <a class="item-content item-link" href="/materi-panduan/">
 		            <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
 	            </a>
 	          </div>
-	          <div class="col-50 tablet-25" style="text-align:center; margin-top: 30px">
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
 	            <a class="item-content item-link" href="/list-video/">
 	              <i class="icon material-icons md-only icon-myicon2"></i><br>Video
 	            </a>
 	          </div>
-	          <div class="col-50 tablet-25" style="text-align:center; margin-top: 30px">
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
 	          	<a class="item-content item-link" href="/detil-doa/">
 	              <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
 	            </a>
 	          </div>
-	          <div class="col-50 tablet-25" style="text-align:center; margin-top: 30px">
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
 	          	<a class="item-content item-link" href="/tempat-ziarah/">
 	              <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
 	            </a>
 	          </div>
           </div>
           <div class="row">
-	          <div class="col-50 tablet-25" style="text-align:center; margin-top: 30px">
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
 	          	<a class="item-content item-link" href="/arahkiblat/">
 	              <i class="icon material-icons md-only icon-myicon4"></i><br>Arah Kiblat
 	            </a>
 	          </div>
-            <div class="col-50 tablet-25" style="text-align:center; margin-top: 30px">
+            <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
               <a class="item-content item-link" href="/profil/">
                 <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
               </a>
             </div>
-	      </div>
+	      </div> -->
+        <div class="grid-container">
+            <div class="row">
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/materi-panduan/">
+                <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/list-video/">
+                <i class="icon material-icons md-only icon-myicon2"></i><br>Video
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/detil-doa/">
+                <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
+              </a>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/tempat-ziarah/">
+                <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/arahkiblat/">
+                <i class="icon material-icons md-only icon-myicon4"></i><br>Kiblat
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/profil/">
+                <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
+              </a>
+            </div>
+            </div>
+            
+        </div>
 		  </div>
 		  <div id="tab-3" class="page-content tab">
 		    <!-- <div class="block-title">Dipublikasikan oleh Aditya Harist Ari F - 17 Juni 2021</div> -->
