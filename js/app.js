@@ -9,7 +9,7 @@ if (document.location.search.indexOf('theme=') >= 0) {
 
 // Init App
 var app = new Framework7({
-  id: 'io.framework7.testapp',
+  id: 'io.framework7.umrohapp',
   root: '#app',
   theme: theme,
   data: function () {
