@@ -1,3 +1,55 @@
+// import { createStore } from 'framework7';
+
+// // create store
+// const store = createStore({
+//   // start with the state (store data)
+//   state: {
+//     users: [],
+//     loading: false,
+//   },
+
+//   // actions to operate with state and for async manipulations
+//   actions: {
+//     getUser({ state }) {
+//       // fetch users from API
+//       state.loading = true;
+//       setTimeout(() => {
+//         state.users = ['User 1','User 2','User 3','User 4','User 5'];
+//         state.loading = false;
+//       }, 3000);
+//       // fetch('some-url')
+//       //   .then((res) => res.json())
+//       //   .then((users) => {
+//       //     // assign new users to store state.users
+//       //     state.users = users;
+//       //   })
+//     },
+//     // ...
+//   },
+
+//   // getters to retreive the state
+//   // getters: {
+//   //   users({ state }) {
+//   //     return state.users;
+//   //   }
+//   // }
+//   getters: {
+//     loading({ state }) {
+//       return state.loading;
+//     },
+//     users({ state }) {
+//       return state.users;
+//     },
+//   },
+
+// })
+
+// // export store
+// export default store;
+
+
+
+
 // Dom7
 var $ = Dom7;
 
