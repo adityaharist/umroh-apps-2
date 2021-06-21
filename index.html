@@ -37,7 +37,7 @@
             -ms-flex-pack: center;
             justify-content: center;
       background-color: #ebedec;
-      object-fit: cover;
+      /*object-fit: cover;*/
       width: 100vw;
       height: 100vh;
       /*position: fixed;
@@ -65,7 +65,18 @@
       font-size: 12px;
       margin-bottom: 10px;
       border-radius: 5px;
-    }    
+    }
+/*
+    .big {
+      animation-name: example;
+      animation-duration: 5s;
+    }
+
+    @keyframes example {
+        0%   {transform: scale(1,1);}
+        50%  {transform: scale(2,2);}
+        100% {transform: scale(1,1);}
+    }*/
 
     /*@media only screen and (max-width: 360px){
 
@@ -304,9 +315,11 @@
     	});
     	  
     	    $(function(){
+          // $(window).load(function() {
     	       setTimeout(function() {
-    		  $('#splash').fadeOut(500);
-    		  console.log("asiappppp!!");
+              // $( "#splash" ).slideUp( 300 ).delay( 800 ).fadeIn( 500 );
+        		  $('#splash').fadeOut(500);
+        		  console.log("asiappppp!!");
     	       }, 5000);
     	    });
     	  
@@ -324,6 +337,26 @@
           		spaceBetween: 0,
           	    });
     	  });
+
+        //Function that centers in viewport
+        // jQuery.fn.center = function() {
+        //   this.css("position", "absolute");
+        //   this.css("top", ($(window).height() - this.height()) / 2 + $(window).scrollTop() + "px");
+        //   this.css("left", ($(window).width() - this.width()) / 2 + $(window).scrollLeft() + "px");
+        //   return this;
+        // }
+
+        $("img").on('animationend', function(e) { 
+            $("img").removeClass("big").css({"display": "none"});
+          });
+
+        //Center
+        // $("img").center()
+
+        //Zoom in / out
+        $("button").on("click", function() {
+          $("#splash").addClass("big").css({"display": "initial"});
+        });
 	  
   </script>
 	
