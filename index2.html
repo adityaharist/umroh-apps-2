@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Panduan Ibadah Umroh</title>
+  <link rel="stylesheet" href="f7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/app2.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/kiblat.css">
+  <link rel="stylesheet" href="css/box-shadows.min.css">
+  <link rel="stylesheet" href="css/box-shadows.css">
+  <link rel="apple-touch-icon" href="img/icon64.png">
+  <link rel="icon" href="img/icon64.png">
+  <style type="text/css">
+     #splash {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+      background-color: #ebedec;
+      /*object-fit: cover;*/
+      width: 100vw;
+      height: 100vh;
+      /*position: fixed;
+      top: 0;
+      left: 0;*/
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+      z-index: 20000;
+    }
+
+    .grid-container{
+      margin-top: 16px;
+    }
+    
+    div[class*="col"] {
+      background: #fff;
+      text-align: center;
+      color: #000;
+      /*border: 1px solid #ddd;*/
+      padding: 16px;
+      font-size: 12px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+/*
+    .big {
+      animation-name: example;
+      animation-duration: 5s;
+    }
+
+    @keyframes example {
+        0%   {transform: scale(1,1);}
+        50%  {transform: scale(2,2);}
+        100% {transform: scale(1,1);}
+    }*/
+
+    /*@media only screen and (max-width: 360px){
+
+    }*/
+    
+  </style>
+</head>
+<body>
+  <!-- <div id="splash"><center><img src="img/splashscreen.jpeg" /></center></div> -->
+  <div id="splash"><center><img src="img/mamelarge7.png" /></center></div>
+  <div id="app">
+    <div class="statusbar"></div>
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+      <div class="page">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="title sliding">Panduan Ibadah Umroh</div>
+            <div class="right">
+<!--               <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
+                <i class="icon f7-icons ios-only">search</i>
+                <i class="icon material-icons md-only">search</i>
+              </a> -->
+              <a class="link icon-only popover-open" data-popover=".popover-menu">
+                <i class="icon f7-icons ios-only">more_vertical_fill</i>
+                <i class="icon material-icons md-only">more_vert</i>
+              </a>
+            </div>
+            <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
+              <div class="searchbar-inner">
+                <div class="searchbar-input-wrap">
+                  <input type="search" placeholder="Cari"/>
+                  <i class="searchbar-icon"></i>
+                  <span class="input-clear-button"></span>
+                </div>
+                <span class="searchbar-disable-button">Cancel</span>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="toolbar toolbar-bottom toolbar-bottom-md tabs-bottom tabbar tabbar-labels">
+          <div class="toolbar-inner">
+          	<a href="#tab-1" class="tab-link">
+          	  <i class="icon f7-icons ios-only">assignment</i>
+          	  <i class="icon material-icons md-only">assignment</i>
+          	  <span class="tabbar-label">Kuis</span>
+          	</a>
+          	<a href="#tab-2" class="tab-link tab-link-active">
+          	  <i class="icon f7-icons ios-only">home</i>
+          	  <i class="icon material-icons md-only">home</i>
+          	  <span class="tabbar-label">Beranda</span>
+          	</a>
+          	<a href="#tab-3" class="tab-link">
+          	  <i class="icon f7-icons ios-only">explore</i>
+          	  <i class="icon material-icons md-only">explore</i>
+          	  <span class="tabbar-label">Kiblat</span>
+          	</a>
+          </div>
+        </div>
+		<div class="tabs">
+		  <div id="tab-1" class="page-content tab">
+		    <div class="block">
+			<div class='row js-startPage'>
+				<div class='col-6 start'>
+				    <div class="block">Kuis Seputar Umroh</div>
+				    <button class='button button-raised js-start hover'>Mulai</button>
+				</div>
+      </div> 
+			<div class='row hidden' id='question-container'>
+			    <section class='question-container col-8'>
+        			<p class="question">Apakah Hukum asli dari Ibadah Umroh?</p><br>
+        			<button class='button button-raised button0 js-answer hover item-input-wrap' value='0'>Wajib</button><br>
+        			<button class='button button-raised button1 js-answer hover item-input-wrap' value='1'>Sunnah</button><br>
+        			<button class='button button-raised button2 js-answer hover item-input-wrap' value='2'>Mubah</button><br>
+        			<button class='button button-raised button3 js-answer hover item-input-wrap' value='3'>Makruh</button>
+        		    </section>
+			</div>
+			<div class='row'>
+			    <div class='continue-container col-8'>
+        			<div class='positionLeft'>
+        				<span class='js-count'>Soal: 1/10</span><br>
+        				<span class='js-score'>Benar: 0/0</span>
+        			</div>
+        			<button class='button button-raised continue js-continue hidden'>Lanjut</button>
+			    </div>
+			</div>
+			<div class='row response-row'>
+        		    <div class='col-12'>
+        			<div class='result'>
+        				<span class='response1'></span><br>
+        				<span class='response2 hidden'></span>
+        			</div>
+        		    </div>
+			</div>
+		    </div>
+		  </div>
+		  <div id="tab-2" class="page-content tab tab-active">
+		  	<div class="tablet-50 slide_gambar" style="height: 50%;">
+			  <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper">
+			      <div class="swiper-pagination"></div>
+			      <div class="swiper-wrapper">
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah3.jpg"/></div></div>
+			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjidil-haram.jpg"/></div></div>
+			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjid-nabawi.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/minum.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/jamaah.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah1.jpg"/></div></div>
+              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/siwak.jpg"/></div></div>
+			      </div>
+			  </div>
+		  	</div>
+		  	<!-- <div class="row">
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+	            <a class="item-content item-link" href="/materi-panduan/">
+		            <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
+	            </a>
+	          </div>
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+	            <a class="item-content item-link" href="/list-video/">
+	              <i class="icon material-icons md-only icon-myicon2"></i><br>Video
+	            </a>
+	          </div>
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+	          	<a class="item-content item-link" href="/detil-doa/">
+	              <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
+	            </a>
+	          </div>
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+	          	<a class="item-content item-link" href="/tempat-ziarah/">
+	              <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
+	            </a>
+	          </div>
+          </div>
+          <div class="row">
+	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+	          	<a class="item-content item-link" href="/arahkiblat/">
+	              <i class="icon material-icons md-only icon-myicon4"></i><br>Arah Kiblat
+	            </a>
+	          </div>
+            <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+              <a class="item-content item-link" href="/profil/">
+                <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
+              </a>
+            </div>
+	      </div> -->
+        <div class="grid-container">
+            <div class="row">
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/materi-panduan/">
+                <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/list-video/">
+                <i class="icon material-icons md-only icon-myicon2"></i><br>Video
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/detil-doa/">
+                <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
+              </a>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/tempat-ziarah/">
+                <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/arahkiblat/">
+                <i class="icon material-icons md-only icon-myicon4"></i><br>Kiblat
+              </a>
+            </div>
+            <div class="col-33 grid-item box bShadow-4 ">
+              <a class="item-content item-link" href="/profil/">
+                <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
+              </a>
+            </div>
+            </div>
+            
+        </div>
+		  </div>
+		  <div id="tab-3" class="page-content tab">
+		    <!-- <div class="block-title">Dipublikasikan oleh Aditya Harist Ari F - 17 Juni 2021</div> -->
+<!-- 		    <div class="block-title">Dipublikasikan oleh Ari - 19 April 2019</div> -->
+		    <!-- <div class="block"> -->
+		    	<!-- <p>Aplikasi yang dibuat untuk membantu Jamaah yang akan menjalankan ibadah Umrah selama di tanah suci Mekah. Dimana didalamnya terdapat panduan materi ibadah Umrah. Terdapat beberapa tata cara dalam bentuk video agar mempermudah pemahaman dalam menjalankan ibadah Umrah </p> -->
+			<!-- <p>Selain itu, anda dapat mengukur sudah sampai sejauh manakah pemahaman mengenai panduan umrah yang telah dipelajari. Dengan adanya Quiz yang tersedia pada aplikasi ini </p> -->
+<!-- 			<p>Disediakan pula dengan fitur arah kiblat untuk kemudahan didalam perjalanan menuju ke Baitullah.</p> -->
+
+<!-- 		    	<p>Aplikasi ini digunakan prasyarat untuk menyelesaikan perkuliahan pada program studi Pendidikan Teknik Informatika sekaligus untuk mendapatkan predikat sebagai Sarjana Pendidikan.</p> -->
+<!-- 		    	<p>Tugas Akhir Skripsi - Barron Brillyan El'faiz 2019.</p> -->
+		    <!-- </div> -->
+        <div class="block">
+          <div class="compass">
+            <div class="arrow"></div>
+            <div class="compass-circle"></div>
+            <div class="my-point"></div>
+          </div>
+          <!-- <button class="start-btn">Start kiblat</button> -->
+        </div>
+    		    
+  		  <div>
+  			</div>
+		  </div>
+		</div>
+		<div class="popover popover-menu">
+	      <div class="popover-angle"></div>
+	      <div class="popover-inner">
+	        <div class="list">
+	          <ul>
+              <li><a href="/feedback/" class="list-button popover-close">Feedback</a></li>
+              <li><a href="/feedback/" class="list-button popover-close">Bagikan ke lain</a></li>
+	            <!-- <li><a href="#" class="list-button popover-close">Credits</a></li> -->
+	          </ul>
+	      	</div>
+	      </div>
+	  	</div>
+      </div>
+    </div>
+  </div>
+<!-- 	<script src="js/compass.js"></script> -->
+  <script src="js/gauge.min.js"></script>
+  <script src="f7/js/framework7.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/kuis.js"></script>
+  <script src="js/kiblat.js"></script>
+
+  <script type="text/javascript">  
+    	$(document).ready(function() {
+    		console.log("cek masuk belum, mame splashscreen!!");	
+    	});
+    	  
+    	    $(function(){
+          // $(window).load(function() {
+    	       setTimeout(function() {
+              // $( "#splash" ).slideUp( 300 ).delay( 800 ).fadeIn( 500 );
+        		  $('#splash').fadeOut(500);
+        		  console.log("asiappppp!!");
+    	       }, 5000);
+    	    });
+    	  
+    	  $(function(){
+    	    var swiper = new Swiper('.swiper-container', {
+    	        loop:true,
+          		grabCursor:true,
+          		simulateTouch: false,
+          		transitionSpeed: 1000,
+          		pagination: '.swiper-pagination',
+          		slidesPerView: 1,
+          		centeredSlides: false,
+          		paginationClickable: true,
+          		autoplay: 2500,
+          		spaceBetween: 0,
+          	    });
+    	  });
+
+        //Function that centers in viewport
+        // jQuery.fn.center = function() {
+        //   this.css("position", "absolute");
+        //   this.css("top", ($(window).height() - this.height()) / 2 + $(window).scrollTop() + "px");
+        //   this.css("left", ($(window).width() - this.width()) / 2 + $(window).scrollLeft() + "px");
+        //   return this;
+        // }
+
+        $("img").on('animationend', function(e) { 
+            $("img").removeClass("big").css({"display": "none"});
+          });
+
+        //Center
+        // $("img").center()
+
+        //Zoom in / out
+        $("button").on("click", function() {
+          $("#splash").addClass("big").css({"display": "initial"});
+        });
+	  
+  </script>
+	
+  
+</body>
+</html>

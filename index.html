@@ -80,6 +80,11 @@
 
     /*@media only screen and (max-width: 360px){
 
+    }*//*
+
+    .panel {
+      min-width: 100px;
+      max-width: 90vw;
     }*/
     
   </style>
@@ -89,13 +94,128 @@
   <div id="splash"><center><img src="img/mamelarge7.png" /></center></div>
   <div id="app">
     <div class="statusbar"></div>
+    
+    <!-- Side Panel diKiri-->
+
+      <div class="panel panel-left panel-reveal">
+       <div class="page">
+       <div class="page-content">
+        <div class="block">
+          <div class="block-title">Main Menu</div>
+          <div class="list no-chevron links-list">
+            <ul>
+              <li>
+                <a href="/materi-panduan/" class="item-content item-link">
+                  <div class="item-media">
+                    <i class="icon f7-icons ios-only">person</i>
+                    <i class="icon material-icons md-only">person</i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">UMRAH</div>
+                    <!-- <div class="item-after">
+                      <div class="badge">4</div>
+                    </div> -->
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/materi-panduan/" class="item-content item-link">
+                  <div class="item-media">
+                    <i class="icon f7-icons ios-only">accessibility</i>
+                    <i class="icon material-icons md-only">accessibility</i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">IHRAM</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/materi-panduan/" class="item-content item-link">
+                  <div class="item-media">
+                    <i class="icon f7-icons ios-only">directions_walk</i>
+                    <i class="icon material-icons md-only">directions_walk</i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">TAWAF</div>
+                    <!-- <div class="item-after">
+                      <div class="badge">1</div>
+                    </div> -->
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/materi-panduan/" class="item-content item-link">
+                  <div class="item-media">
+                    <i class="icon f7-icons ios-only">directions_walk</i>
+                    <i class="icon material-icons md-only">directions_walk</i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">SAI</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/materi-panduan/" class="item-content item-link">
+                  <div class="item-media">
+                    <i class="icon f7-icons ios-only">content_cut</i>
+                    <i class="icon material-icons md-only">content_cut</i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">CUKUR</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/materi-panduan/" class="item-content item-link">
+                  <div class="item-media">
+                    <i class="icon f7-icons ios-only">info</i>
+                    <i class="icon material-icons md-only">info</i>
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title">TENTANG</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <p><a class="panel-close" href="#">Close me</a></p> -->
+          <!-- <p><a class="panel-open" href="#" data-panel="right">Open Right Panel</a></p> -->
+        </div>
+        <div class="block">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mauris leo, eu bibendum
+             neque congue non. Ut leo mauris, eleifend eu commodo a, egestas ac urna. Maecenas in lacus faucibus,
+             viverra ipsum pulvinar, molestie arcu. Etiam lacinia venenatis dignissim. Suspendisse non nisl semper
+             tellus malesuada suscipit eu et eros. Nulla eu enim quis quam elementum vulputate. Mauris ornare consequat
+             nunc viverra pellentesque. Aenean semper eu massa sit amet aliquam. Integer et neque sed libero mollis
+             elementum at vitae ligula. Vestibulum pharetra sed libero sed porttitor. Suspendisse a faucibus lectus.
+          </p>
+        </div>
+       </div> <!-- page-content -->
+       </div> <!-- page -->
+      </div>
+      <div class="panel panel-right panel-cover">
+        <div class="block">
+          <p>Right Panel content here</p>
+          <p><a class="panel-close" href="#">Close me</a></p>
+          <p><a class="panel-open" href="#" data-panel="left">Open Left Panel</a></p>
+        </div>
+      </div>
+
+
     <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
       <div class="page">
         <div class="navbar">
           <div class="navbar-inner">
+            <div class="left">
+              <a class="panel-open link icon-only panel-open ripple-inset" href="#" data-panel='left'>
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div> <!-- left -->
             <div class="title sliding">Panduan Ibadah Umroh</div>
             <div class="right">
-<!--               <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
+              <!-- <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
                 <i class="icon f7-icons ios-only">search</i>
                 <i class="icon material-icons md-only">search</i>
               </a> -->
@@ -103,7 +223,7 @@
                 <i class="icon f7-icons ios-only">more_vertical_fill</i>
                 <i class="icon material-icons md-only">more_vert</i>
               </a>
-            </div>
+            </div> <!-- right -->
             <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
               <div class="searchbar-inner">
                 <div class="searchbar-input-wrap">
@@ -135,170 +255,175 @@
           	</a>
           </div>
         </div>
-		<div class="tabs">
-		  <div id="tab-1" class="page-content tab">
-		    <div class="block">
-			<div class='row js-startPage'>
-				<div class='col-6 start'>
-				    <div class="block">Kuis Seputar Umroh</div>
-				    <button class='button button-raised js-start hover'>Mulai</button>
-				</div>
-      </div> 
-			<div class='row hidden' id='question-container'>
-			    <section class='question-container col-8'>
-        			<p class="question">Apakah Hukum asli dari Ibadah Umroh?</p><br>
-        			<button class='button button-raised button0 js-answer hover item-input-wrap' value='0'>Wajib</button><br>
-        			<button class='button button-raised button1 js-answer hover item-input-wrap' value='1'>Sunnah</button><br>
-        			<button class='button button-raised button2 js-answer hover item-input-wrap' value='2'>Mubah</button><br>
-        			<button class='button button-raised button3 js-answer hover item-input-wrap' value='3'>Makruh</button>
-        		    </section>
-			</div>
-			<div class='row'>
-			    <div class='continue-container col-8'>
-        			<div class='positionLeft'>
-        				<span class='js-count'>Soal: 1/10</span><br>
-        				<span class='js-score'>Benar: 0/0</span>
+    		<div class="tabs">
+    		  <div id="tab-1" class="page-content tab">
+    		    <div class="block">
+        			<div class='row js-startPage'>
+        				<div class='col-6 start'>
+        				    <div class="block">Kuis Seputar Umroh</div>
+        				    <button class='button button-raised js-start hover'>Mulai</button>
+        				</div>
+              </div> 
+        			<div class='row hidden' id='question-container'>
+        			    <section class='question-container col-8'>
+                			<p class="question">Apakah Hukum asli dari Ibadah Umroh?</p><br>
+                			<button class='button button-raised button0 js-answer hover item-input-wrap' value='0'>Wajib</button><br>
+                			<button class='button button-raised button1 js-answer hover item-input-wrap' value='1'>Sunnah</button><br>
+                			<button class='button button-raised button2 js-answer hover item-input-wrap' value='2'>Mubah</button><br>
+                			<button class='button button-raised button3 js-answer hover item-input-wrap' value='3'>Makruh</button>
+                		    </section>
         			</div>
-        			<button class='button button-raised continue js-continue hidden'>Lanjut</button>
-			    </div>
-			</div>
-			<div class='row response-row'>
-        		    <div class='col-12'>
-        			<div class='result'>
-        				<span class='response1'></span><br>
-        				<span class='response2 hidden'></span>
+        			<div class='row'>
+        			    <div class='continue-container col-8'>
+                			<div class='positionLeft'>
+                				<span class='js-count'>Soal: 1/10</span><br>
+                				<span class='js-score'>Benar: 0/0</span>
+                			</div>
+                			<button class='button button-raised continue js-continue hidden'>Lanjut</button>
+        			    </div>
         			</div>
-        		    </div>
-			</div>
-		    </div>
-		  </div>
-		  <div id="tab-2" class="page-content tab tab-active">
-		  	<div class="tablet-50 slide_gambar" style="height: 50%;">
-			  <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper">
-			      <div class="swiper-pagination"></div>
-			      <div class="swiper-wrapper">
-              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah3.jpg"/></div></div>
-			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjidil-haram.jpg"/></div></div>
-			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjid-nabawi.jpg"/></div></div>
-              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/minum.jpg"/></div></div>
-              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/jamaah.jpg"/></div></div>
-              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah1.jpg"/></div></div>
-              			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/siwak.jpg"/></div></div>
-			      </div>
-			  </div>
-		  	</div>
-		  	<!-- <div class="row">
-	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
-	            <a class="item-content item-link" href="/materi-panduan/">
-		            <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
-	            </a>
-	          </div>
-	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
-	            <a class="item-content item-link" href="/list-video/">
-	              <i class="icon material-icons md-only icon-myicon2"></i><br>Video
-	            </a>
-	          </div>
-	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
-	          	<a class="item-content item-link" href="/detil-doa/">
-	              <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
-	            </a>
-	          </div>
-	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
-	          	<a class="item-content item-link" href="/tempat-ziarah/">
-	              <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
-	            </a>
-	          </div>
-          </div>
-          <div class="row">
-	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
-	          	<a class="item-content item-link" href="/arahkiblat/">
-	              <i class="icon material-icons md-only icon-myicon4"></i><br>Arah Kiblat
-	            </a>
-	          </div>
-            <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
-              <a class="item-content item-link" href="/profil/">
-                <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
-              </a>
-            </div>
-	      </div> -->
-        <div class="grid-container">
-            <div class="row">
-            <div class="col-33 grid-item box bShadow-4 ">
-              <a class="item-content item-link" href="/materi-panduan/">
-                <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
-              </a>
-            </div>
-            <div class="col-33 grid-item box bShadow-4 ">
-              <a class="item-content item-link" href="/list-video/">
-                <i class="icon material-icons md-only icon-myicon2"></i><br>Video
-              </a>
-            </div>
-            <div class="col-33 grid-item box bShadow-4 ">
-              <a class="item-content item-link" href="/detil-doa/">
-                <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
-              </a>
-            </div>
-            </div>
+        			<div class='row response-row'>
+                		<div class='col-12'>
+                			<div class='result'>
+                				<span class='response1'></span><br>
+                				<span class='response2 hidden'></span>
+                			</div>
+                		</div>
+        			</div>
+    		    </div>
+    		  </div>
+    		  <div id="tab-2" class="page-content tab tab-active">
+    		  	<div class="tablet-50 slide_gambar" style="height: 50%;">
+      			  <div data-pagination='{"el": ".swiper-pagination", "hideOnClick": true}' class="swiper-container swiper-init demo-swiper">
+      			      <div class="swiper-pagination"></div>
+      			      <div class="swiper-wrapper">
+                    			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah3.jpg"/></div></div>
+      			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjidil-haram.jpg"/></div></div>
+      			      	<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/masjid-nabawi.jpg"/></div></div>
+                    			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/minum.jpg"/></div></div>
+                    			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/jamaah.jpg"/></div></div>
+                    			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/makah1.jpg"/></div></div>
+                    			<div class="swiper-slide"><div class="swiper-zoom-container"><img src="img/siwak.jpg"/></div></div>
+      			      </div>
+      			  </div>
+    		  	</div>
+    		  	<!-- <div class="row">
+    	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+    	            <a class="item-content item-link" href="/materi-panduan/">
+    		            <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
+    	            </a>
+    	          </div>
+    	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+    	            <a class="item-content item-link" href="/list-video/">
+    	              <i class="icon material-icons md-only icon-myicon2"></i><br>Video
+    	            </a>
+    	          </div>
+    	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+    	          	<a class="item-content item-link" href="/detil-doa/">
+    	              <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
+    	            </a>
+    	          </div>
+    	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+    	          	<a class="item-content item-link" href="/tempat-ziarah/">
+    	              <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
+    	            </a>
+    	          </div>
+              </div>
+              <div class="row">
+    	          <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+    	          	<a class="item-content item-link" href="/arahkiblat/">
+    	              <i class="icon material-icons md-only icon-myicon4"></i><br>Arah Kiblat
+    	            </a>
+    	          </div>
+                <div class="col-50 tablet-25 box bShadow-4 " style="text-align:center; margin-top: 30px">
+                  <a class="item-content item-link" href="/profil/">
+                    <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
+                  </a>
+                </div>
+    	      </div> -->
+            <div class="grid-container">
+                <div class="row">
+                <div class="col-33 grid-item box bShadow-4 ">
+                  <a class="item-content item-link" href="/materi-panduan/">
+                    <i class="icon material-icons md-only icon-myicon"></i><br>Panduan
+                  </a>
+                </div>
+                <div class="col-33 grid-item box bShadow-4 ">
+                  <a class="item-content item-link" href="/list-video/">
+                    <i class="icon material-icons md-only icon-myicon2"></i><br>Video
+                  </a>
+                </div>
+                <div class="col-33 grid-item box bShadow-4 ">
+                  <a class="item-content item-link" href="/detil-doa/">
+                    <i class="icon material-icons md-only icon-myicon3"></i><br>Doa
+                  </a>
+                </div>
+                </div>
 
-            <div class="row">
-            <div class="col-33 grid-item box bShadow-4 ">
-              <a class="item-content item-link" href="/tempat-ziarah/">
-                <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
-              </a>
-            </div>
-            <div class="col-33 grid-item box bShadow-4 ">
-              <a class="item-content item-link" href="/arahkiblat/">
-                <i class="icon material-icons md-only icon-myicon4"></i><br>Kiblat
-              </a>
-            </div>
-            <div class="col-33 grid-item box bShadow-4 ">
-              <a class="item-content item-link" href="/profil/">
-                <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
-              </a>
-            </div>
-            </div>
-            
-        </div>
-		  </div>
-		  <div id="tab-3" class="page-content tab">
-		    <!-- <div class="block-title">Dipublikasikan oleh Aditya Harist Ari F - 17 Juni 2021</div> -->
-<!-- 		    <div class="block-title">Dipublikasikan oleh Ari - 19 April 2019</div> -->
-		    <!-- <div class="block"> -->
-		    	<!-- <p>Aplikasi yang dibuat untuk membantu Jamaah yang akan menjalankan ibadah Umrah selama di tanah suci Mekah. Dimana didalamnya terdapat panduan materi ibadah Umrah. Terdapat beberapa tata cara dalam bentuk video agar mempermudah pemahaman dalam menjalankan ibadah Umrah </p> -->
-			<!-- <p>Selain itu, anda dapat mengukur sudah sampai sejauh manakah pemahaman mengenai panduan umrah yang telah dipelajari. Dengan adanya Quiz yang tersedia pada aplikasi ini </p> -->
-<!-- 			<p>Disediakan pula dengan fitur arah kiblat untuk kemudahan didalam perjalanan menuju ke Baitullah.</p> -->
+                <div class="row">
+                <div class="col-33 grid-item box bShadow-4 ">
+                  <a class="item-content item-link" href="/tempat-ziarah/">
+                    <i class="icon material-icons md-only icon-myicon4"></i><br>Ziarah
+                  </a>
+                </div>
+                <div class="col-33 grid-item box bShadow-4 ">
+                  <a class="item-content item-link" href="/arahkiblat/">
+                    <i class="icon material-icons md-only icon-myicon4"></i><br>Kiblat
+                  </a>
+                </div>
+                <div class="col-33 grid-item box bShadow-4 ">
+                  <a class="item-content item-link" href="/profil/">
+                    <i class="icon material-icons md-only icon-myicon4"></i><br>Profil
+                  </a>
+                </div>
+                </div>
+                <!-- <div class="block">
+                  <p><a class="panel-open" href="#">Open Left Panel</a></p>
+                  <p><a class="panel-open" href="#" data-panel="right">Open Right Panel</a></p>
+                </div> -->
+                
+            </div> <!-- grid -->
+    		  </div>
+    		  <div id="tab-3" class="page-content tab">
+    		    <!-- <div class="block-title">Dipublikasikan oleh Aditya Harist Ari F - 17 Juni 2021</div> -->
+            <!-- <div class="block-title">Dipublikasikan oleh Ari - 19 April 2019</div> -->
+    		    <!-- <div class="block"> -->
+    		    	<!-- <p>Aplikasi yang dibuat untuk membantu Jamaah yang akan menjalankan ibadah Umrah selama di tanah suci Mekah. Dimana didalamnya terdapat panduan materi ibadah Umrah. Terdapat beberapa tata cara dalam bentuk video agar mempermudah pemahaman dalam menjalankan ibadah Umrah </p> -->
+    			   <!-- <p>Selain itu, anda dapat mengukur sudah sampai sejauh manakah pemahaman mengenai panduan umrah yang telah dipelajari. Dengan adanya Quiz yang tersedia pada aplikasi ini </p> -->
+            <!-- <p>Disediakan pula dengan fitur arah kiblat untuk kemudahan didalam perjalanan menuju ke Baitullah.</p> -->
 
-<!-- 		    	<p>Aplikasi ini digunakan prasyarat untuk menyelesaikan perkuliahan pada program studi Pendidikan Teknik Informatika sekaligus untuk mendapatkan predikat sebagai Sarjana Pendidikan.</p> -->
-<!-- 		    	<p>Tugas Akhir Skripsi - Barron Brillyan El'faiz 2019.</p> -->
-		    <!-- </div> -->
-        <div class="block">
-          <div class="compass">
-            <div class="arrow"></div>
-            <div class="compass-circle"></div>
-            <div class="my-point"></div>
-          </div>
-          <!-- <button class="start-btn">Start kiblat</button> -->
-        </div>
-    		    
-  		  <div>
-  			</div>
-		  </div>
-		</div>
-		<div class="popover popover-menu">
-	      <div class="popover-angle"></div>
-	      <div class="popover-inner">
-	        <div class="list">
-	          <ul>
-              <li><a href="/feedback/" class="list-button popover-close">Feedback</a></li>
-              <li><a href="/feedback/" class="list-button popover-close">Bagikan ke lain</a></li>
-	            <!-- <li><a href="#" class="list-button popover-close">Credits</a></li> -->
-	          </ul>
-	      	</div>
-	      </div>
-	  	</div>
+            <!-- <p>Aplikasi ini digunakan prasyarat untuk menyelesaikan perkuliahan pada program studi Pendidikan Teknik Informatika sekaligus untuk mendapatkan predikat sebagai Sarjana Pendidikan.</p> -->
+            <!-- <p>Tugas Akhir Skripsi - Barron Brillyan El'faiz 2019.</p> -->
+    		    <!-- </div> -->
+            <div class="block">
+              <div class="compass">
+                <div class="arrow"></div>
+                <div class="compass-circle"></div>
+                <div class="my-point"></div>
+              </div>
+              <!-- <button class="start-btn">Start kiblat</button> -->
+            </div>
+        		    
+      		  <div>
+      			</div>
+    		  </div>
+    		</div>
+        <!-- kanan atas -->
+  		  <div class="popover popover-menu">
+  	      <div class="popover-angle"></div>
+  	      <div class="popover-inner">
+  	        <div class="list">
+  	          <ul>
+                <li><a href="/feedback/" class="list-button popover-close">Feedback</a></li>
+                <li><a href="/feedback/" class="list-button popover-close">Bagikan ke lain</a></li>
+  	            <!-- <li><a href="#" class="list-button popover-close">Credits</a></li> -->
+  	          </ul>
+  	      	</div>
+  	      </div>
+  	    </div> <!-- popover -->
       </div>
     </div>
-  </div>
+  </div> <!-- app -->
 <!-- 	<script src="js/compass.js"></script> -->
   <script src="js/gauge.min.js"></script>
   <script src="f7/js/framework7.min.js"></script>
