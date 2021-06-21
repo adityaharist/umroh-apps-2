@@ -21,13 +21,34 @@
   <link rel="icon" href="img/icon64.png">
   <style type="text/css">
      #splash {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
       background-color: #ebedec;
       object-fit: cover;
       width: 100vw;
       height: 100vh;
-      position: fixed;
+      /*position: fixed;
       top: 0;
-      left: 0;
+      left: 0;*/
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
       z-index: 20000;
     }
 
@@ -53,7 +74,7 @@
 </head>
 <body>
   <!-- <div id="splash"><center><img src="img/splashscreen.jpeg" /></center></div> -->
-  <div id="splash"><center><img src="img/mamelarge6.png" /></center></div>
+  <div id="splash"><center><img src="img/mamelarge7.png" /></center></div>
   <div id="app">
     <div class="statusbar"></div>
     <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
