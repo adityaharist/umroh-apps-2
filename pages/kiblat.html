@@ -1,39 +1,51 @@
-<div class="page" data-name="arahkiblat">
-	<div class="navbar">
-		<div class="navbar-inner sliding">
-			<div class="left">
-				<a href="#" class="link back">
-					<i class="icon icon-back"></i>
-					<span class="ios-only">Back</span>
-				</a>
-			</div>
-			<div class="title">Kabaa Kompas</div>
-		</div>
-	</div>
-	<div class="bg page-content">
-		
-	   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</div>
-
-</div>
+<template>
+  <div class="page" data-name="arahkiblat">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="title">Profile</div>
+      </div>
+    </div>
+    <div class="page-content">
+      {{#if user}}
+      <!-- Show user list when it is loaded -->
+      <div class="list simple-list">
+        <ul>
+          <li>First Name: {{user.firstName}}</li>
+          <li>Last Name: {{user.lastName}}</li>
+          <li>Age: {{user.age}}</li>
+        </ul>
+      </div>
+      {{else}}
+      <!-- Otherwise show preloader -->
+      <div class="block block-strong text-align-center">
+        <div class="preloader"></div>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</template>
+<script>
+  return {
+    data: function () {
+      return {
+        // empty initial user data
+        user: null,
+      }
+    },
+    on: {
+      pageInit: function () {
+        var self = this;
+        var app = self.$app;
+        // request user data on page init
+        app.request.get('http://api.website.com/get-user-profile', (user) => {
+          // update component state with new state
+          self.$setState({
+            user: user,
+          });
+        });
+      },
+    },
+  };
+</script>

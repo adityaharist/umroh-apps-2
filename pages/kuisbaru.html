@@ -1,49 +1,140 @@
 <template>
-  <div class="page">
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="title">Profile</div>
-      </div>
-    </div>
-    <div class="page-content">
-      {{#if user}}
-      <!-- Show user list when it is loaded -->
-      <div class="list simple-list">
-        <ul>
-          <li>First Name: {{user.firstName}}</li>
-          <li>Last Name: {{user.lastName}}</li>
-          <li>Age: {{user.age}}</li>
-        </ul>
-      </div>
-      {{else}}
-      <!-- Otherwise show preloader -->
-      <div class="block block-strong text-align-center">
-        <div class="preloader"></div>
-      </div>
-      {{/if}}
-    </div>
-  </div>
+<div class="page" data-name="kuisbaru">
+	<div class="navbar">
+		<div class="navbar-inner sliding">
+			<!-- <div class="left">
+				<a href="#" class="link back">
+					<i class="icon icon-back"></i>
+					<span class="ios-only">Back</span>
+				</a>
+			</div> -->
+			<div class="title">Game Kuis</div>
+			<div class="right">
+				<a href="#" class="link navbar-tooltip">
+					<i class="icon f7-icons if-ios">info</i>
+					<i class="icon material-icons if-md">info_outline</i>
+				</a>
+	        </div>
+		</div>
+	</div>
+	<div class="page-content">
+			<div class = "ui-content">
+				<form>
+					<!-- <fieldset data-role = "controlgroup"> -->
+						<div class="block-title">Pilih Level</div>
+						<!-- <input type = "radio" id = "radio1" name = "radio-choice-0" />
+						<label for = "radio1">Easy</label>
+
+						<input type = "radio" id = "radio2" name = "radio-choice-0" />
+						<label for = "radio2">Medium</label>
+
+						<input type = "radio" id = "radio3" name = "radio-choice-0" />
+						<label for = "radio3">Hard</label> -->
+						<div class="list">
+						  <ul>
+						    <li>
+						      <label class="item-radio item-content">
+						        <input type="radio" id = "radio1" name = "radio-choice-0" value="Mudah" />
+						        <i class="icon icon-radio"></i>
+						        <div class="item-inner">
+						          <div class="item-title">Mudah</div>
+						        </div>
+						      </label>
+						    </li>
+						    <li>
+						      <label class="item-radio item-content">
+						        <input type="radio" id = "radio2" name = "radio-choice-0" value="Sedang"/>
+						        <i class="icon icon-radio"></i>
+						        <div class="item-inner">
+						          <div class="item-title">Sedang</div>
+						        </div>
+						      </label>
+						    </li>
+						    <li>
+						      <label class="item-radio item-content">
+						        <input type="radio" id = "radio3" name = "radio-choice-0" value="Susah"/>
+						        <i class="icon icon-radio"></i>
+						        <div class="item-inner">
+						          <div class="item-title">Susah</div>
+						        </div>
+						      </label>
+						    </li>
+						  </ul>
+						</div>
+					<!-- </fieldset> -->
+				
+					<div class="block-title"><label for = "slider">Jumlah Kuis</label></div>
+					<!-- <input type = "range" name = "slider" id = "slider" value = "20" min = "1" max = "50" data-highlight = "true">	 -->
+					<div class="list simple-list">
+					  <ul>
+					    <li>
+					      <div class="item-cell width-auto flex-shrink-0">
+					        <i class="icon f7-icons ios-only">circle</i>
+					        <i class="icon material-icons md-only">brightness_low</i>
+					      </div>
+					      <div class="item-cell flex-shrink-3">
+					        <!-- range slider, enable labels -->
+					        <div class="range-slider range-slider-init color-blue" data-label="true">
+					          <input type="range" min="1" max="50" step="1" value="50">
+					        </div>
+					      </div>
+					      <div class="item-cell width-auto flex-shrink-0">
+					        <i class="icon f7-icons ios-only">circle_half</i>
+					        <i class="icon material-icons md-only">brightness_high</i>
+					      </div>
+					    </li>
+					  </ul>
+					</div>
+
+				</form>
+				<div class="block block-strong">
+			        <button class="button open-alert button-large button-fill button-preloader ${isLoading ? 'button-loading' : ''}" @click=${load}>
+			          <span>Mulai</span>
+			        </button>
+		      	</div>
+			</div>
+			<div data-role = "footer" class = "ui-content">
+				
+			</div>
+			
+			<!-- <div data-role="popup" id="popupBasic" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;"> -->
+				<div data-role="header" data-theme="a">
+					<h1>Level</h1>
+				</div>
+				<!-- <div role="main" class="ui-content"> -->
+				<button class="col button open-alert">Alert</button> <!-- akan muncul saat kamu belum pilih level-->
+					<h3 class="ui-title">You have not selected difficulty!</h3>				
+					<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-center ui-btn-a" data-rel="back">OK</a>
+				<!-- </div> -->
+			<!-- </div> -->
+	</div>
+</div>
 </template>
 <script>
-  return {
-    data: function () {
-      return {
-        // empty initial user data
-        user: null,
-      }
-    },
-    on: {
-      pageInit: function () {
-        var self = this;
-        var app = self.$app;
-        // request user data on page init
-        app.request.get('http://api.website.com/get-user-profile', (user) => {
-          // update component state with new state
-          self.$setState({
-            user: user,
-          });
-        });
-      },
-    },
-  };
+  export default (props, { $update }) => {
+    let isLoading = false;
+
+    const load = () => {
+      isLoading = true;
+      $update();
+      setTimeout(() => {
+        isLoading = false;
+        $update();
+      }, 3000);
+    }
+
+    return $render;
+  }
+  // todolist (fungsi)
+  // jika belum pilih level akan muncul dialog
+  // lakukan random array pada sebuah pertanyaan
+  // load pertanyaan
+  // level game
+  // cek pertanyaan apakah sudah dijawab atau belum
+  // getJawabanUser
+  // next Halaman Pertanyaan
+  // previous Halaman Pertanyaan
+  // previous Halaman Pertanyaan
+  // generateRightAnswerPage
+  // 
 </script>
