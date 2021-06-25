@@ -63,6 +63,31 @@ var routes = [
     name: 'arahkiblat',
   },
   {
+    path: '/materi-umroh/',
+    url: './pages/materi-umroh.html',
+    name: 'materi-umroh',
+  },
+  {
+    path: '/materi-ihram/',
+    url: './pages/materi-ihram.html',
+    name: 'materi-ihram',
+  },
+  {
+    path: '/materi-tawaf/',
+    url: './pages/materi-tawaf.html',
+    name: 'materi-tawaf',
+  },
+  {
+    path: '/materi-sai/',
+    url: './pages/materi-sai.html',
+    name: 'materi-sai',
+  },
+  {
+    path: '/materi-cukur/',
+    url: './pages/materi-cukur.html',
+    name: 'materi-cukur',
+  },
+  {
     path: '/profil/',
     url: './pages/profil.html',
     name: 'profil',
