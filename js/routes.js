@@ -103,6 +103,11 @@ var routes = [
     name: 'materi-ziarah',
   },
   {
+    path: '/kuisbaru/',
+    url: './pages/kuisbaru.html',
+    name: 'kuisbaru',
+  },
+  {
     path: '/profil/',
     url: './pages/profil.html',
     name: 'profil',
