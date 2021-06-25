@@ -88,6 +88,16 @@ var routes = [
     name: 'materi-cukur',
   },
   {
+    path: '/materi-tahalul/',
+    url: './pages/materi-tahalul.html',
+    name: 'materi-tahalul',
+  },
+  {
+    path: '/materi-dam/',
+    url: './pages/materi-dam.html',
+    name: 'materi-dam',
+  },
+  {
     path: '/profil/',
     url: './pages/profil.html',
     name: 'profil',
