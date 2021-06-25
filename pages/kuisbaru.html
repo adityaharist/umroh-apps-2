@@ -29,7 +29,7 @@
 
 						<input type = "radio" id = "radio3" name = "radio-choice-0" />
 						<label for = "radio3">Hard</label> -->
-
+						<div class="block block-strong">
 						<div class="list">
 						  <ul>
 						    <li>
@@ -61,10 +61,12 @@
 						    </li>
 						  </ul>
 						</div>
+						</div>
 					<!-- </fieldset> -->
 				
-					<label for = "slider">Amount of questions</label>
+					<div class="block-title"><label for = "slider">Jumlah Kuis</label></div>
 					<!-- <input type = "range" name = "slider" id = "slider" value = "20" min = "1" max = "50" data-highlight = "true">	 -->
+					<div class="block block-strong">
 					<div class="list simple-list">
 					  <ul>
 					    <li>
@@ -74,7 +76,7 @@
 					      </div>
 					      <div class="item-cell flex-shrink-3">
 					        <!-- range slider, enable labels -->
-					        <div class="range-slider range-slider-init color-orange" data-label="true">
+					        <div class="range-slider range-slider-init color-blue" data-label="true">
 					          <input type="range" min="1" max="50" step="1" value="50">
 					        </div>
 					      </div>
@@ -85,6 +87,8 @@
 					    </li>
 					  </ul>
 					</div>
+					</div>
+
 				</form>
 				<div class="block block-strong">
 			        <button class="button button-large button-fill button-preloader ${isLoading ? 'button-loading' : ''}" @click=${load}>
