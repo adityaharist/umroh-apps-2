@@ -59,11 +59,6 @@ if (document.location.search.indexOf('theme=') >= 0) {
   theme = document.location.search.split('theme=')[1].split('&')[0];
 }
 
-// Alert
-$('.open-alert').on('click', function () {
-  app.dialog.alert('Kamu harus pilih Levelnya!');
-});
-
 // Init App
 var app = new Framework7({
   id: 'io.framework7.umrohapp',
@@ -86,4 +81,13 @@ var app = new Framework7({
   vi: {
     placementId: 'pltd4o7ibb9rc653x14',
   },
+});
+
+
+app.on('popupOpen', function () {
+  console.log(this); // -> app instance
+});
+// Alert
+$('.open-alert').on('click', function () {
+  app.dialog.alert('Kamu harus pilih Levelnya!');
 });
