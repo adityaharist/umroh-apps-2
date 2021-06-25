@@ -17,17 +17,37 @@
 		</div>
 	</div>
 	<div class="page-content">
-		<div class="block">
-			<p><span data-progress="10" class="progressbar color-green" id="demo-inline-progressbar"></span></p>
-		</div>
-		<div class="card card-content-padding">
-			<div class="card-content card-content-padding question">Apa sih Umrah itu?</div>
-      	</div>
-      	<div class="card">
-      		<div class="card-content item-title choice-text">Ibadah di semua bulan</div>
-      	</div>
-		<div class="block">
-			<a href="/quiz2/" button class="col button button-fill">Lanjut > </a>
-	    </div>
+			<div class = "ui-content">
+				<form>
+					<!-- <fieldset data-role = "controlgroup"> -->
+						<div>Choose difficulty</div>
+						<input type = "radio" id = "radio1" name = "radio-choice-0" />
+						<label for = "radio1">Easy</label>
+
+						<input type = "radio" id = "radio2" name = "radio-choice-0" />
+						<label for = "radio2">Medium</label>
+
+						<input type = "radio" id = "radio3" name = "radio-choice-0" />
+						<label for = "radio3">Hard</label>
+					<!-- </fieldset> -->
+				
+					<label for = "slider">Amount of questions</label>
+					<input type = "range" name = "slider" id = "slider" value = "20" min = "1" max = "50" data-highlight = "true">	
+				</form>
+				<a class="ui-btn ui-shadow ui-corner-all" id="start" data-transition = "pop">Start!</a>
+			</div>
+			<div data-role = "footer" class = "ui-content">
+				
+			</div>
+			
+			<!-- <div data-role="popup" id="popupBasic" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;"> -->
+				<div data-role="header" data-theme="a">
+					<h1>Difficulty</h1>
+				</div>
+				<!-- <div role="main" class="ui-content"> -->
+					<h3 class="ui-title">You have not selected difficulty!</h3>				
+					<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-center ui-btn-a" data-rel="back">OK</a>
+				<!-- </div> -->
+			<!-- </div> -->
 	</div>
 </div>
