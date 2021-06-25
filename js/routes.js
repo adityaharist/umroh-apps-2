@@ -63,9 +63,9 @@ var routes = [
     name: 'arahkiblat',
   },
   {
-    path: '/materi-umroh/',
-    url: './pages/materi-umroh.html',
-    name: 'materi-umroh',
+    path: '/materi-umrah/',
+    url: './pages/materi-umrah.html',
+    name: 'materi-umrah',
   },
   {
     path: '/materi-ihram/',
