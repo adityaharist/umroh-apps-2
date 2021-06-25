@@ -63,9 +63,14 @@ var routes = [
     name: 'arahkiblat',
   },
   {
-    path: '/materi-umrah/',
-    url: './pages/materi-umrah.html',
-    name: 'materi-umrah',
+    path: '/materi-cukur/',
+    url: './pages/materi-cukur.html',
+    name: 'materi-cukur',
+  },
+  {
+    path: '/materi-dam/',
+    url: './pages/materi-dam.html',
+    name: 'materi-dam',
   },
   {
     path: '/materi-ihram/',
@@ -73,19 +78,9 @@ var routes = [
     name: 'materi-ihram',
   },
   {
-    path: '/materi-tawaf/',
-    url: './pages/materi-tawaf.html',
-    name: 'materi-tawaf',
-  },
-  {
     path: '/materi-sai/',
     url: './pages/materi-sai.html',
     name: 'materi-sai',
-  },
-  {
-    path: '/materi-cukur/',
-    url: './pages/materi-cukur.html',
-    name: 'materi-cukur',
   },
   {
     path: '/materi-tahalul/',
@@ -93,9 +88,19 @@ var routes = [
     name: 'materi-tahalul',
   },
   {
-    path: '/materi-dam/',
-    url: './pages/materi-dam.html',
-    name: 'materi-dam',
+    path: '/materi-tawaf/',
+    url: './pages/materi-tawaf.html',
+    name: 'materi-tawaf',
+  },
+  {
+    path: '/materi-umrah/',
+    url: './pages/materi-umrah.html',
+    name: 'materi-umrah',
+  },
+  {
+    path: '/materi-ziarah/',
+    url: './pages/materi-ziarah.html',
+    name: 'materi-ziarah',
   },
   {
     path: '/profil/',
